@@ -11,7 +11,8 @@
 Function.prototype.bind = function (context) {
   const _thisFn = this;
   return function () {
-    _thisFn.call(context);
+    _thisFn.call(context); // OR
+    // _thisFn.apply(context);
   }
 }
 
